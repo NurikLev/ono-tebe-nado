@@ -70,9 +70,12 @@
 /*jambotron*/
 
 .jambotron {
-    margin-top: 92px;
-    padding: 165px 24px 50px;
-    background: url(../images/cover.jpg) center no-repeat;
+	  margin-top: 92px;
+	  padding: 10.3rem 3rem 3.1rem;
+	  background-image: url(../images/cover.jpg);
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  background-position: center;
     gap: 136px;
     position: relative;
 }
@@ -149,7 +152,7 @@
     padding: 12px 32px;
     background-color: transparent;
     border: 1px solid white;
-    font-family: Raleway, san-serif;
+    font-family: Raleway, sans-serif;
 }
 
 /*lots*/
@@ -178,13 +181,14 @@
 
 .lots__blocks-item {
     flex-grow: 1;
+		width: 430px;
+		min-height: 450px;
 }
 
 .card {
     display: flex;
-    max-width: 430px;
-    min-height: 450px;
     height: 100%;
+		width: 100%;
     flex-direction: column;
     justify-content: space-between;
     padding: 50px 40px 50px 40px;
@@ -249,18 +253,11 @@
 .about__column {
     display: grid;
     grid-template-columns: 430px 1fr;
-    gap: 25px
+    gap: 25px;
 }
 
 .about__logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.logo__figure {
-    display: flex;
+		display: flex;
     justify-content: center;
     align-items: center;
     background: black;
@@ -285,7 +282,7 @@
 .about__block-text {
     display: flex;
     flex-direction: column;
-    gap: 25px
+    gap: 25px;
 }
 
 .about__text {
@@ -304,6 +301,10 @@
     padding-left: 50px;
     padding-right: 50px;
     
+}
+
+.footer__link_active{
+	pointer-events: none;
 }
 
 .footer__nav-link {
